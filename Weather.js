@@ -4,6 +4,7 @@ let humidity=document.getElementById('humidity');
 let windspeed=document.getElementById('windspeed');
 let cityinfo=document.getElementById('cityinfo');
 let pic=document.getElementById('statuspic');
+
 async function getweather()
     {
         let cityname=document.getElementById('city').value;
@@ -18,29 +19,30 @@ async function getweather()
         return data;
     } 
 
-    async function weather() 
+async function weather() 
     {
         let weather = await getweather();
-    let temp_=weather.main.temp-273.15;
-    temp.textContent=temp_.toFixed(2)+"°C";
-    humidity.textContent=weather.main.humidity;
-    windspeed.textContent=weather.wind.speed;
-    cityinfo.textContent=weather.name;
+        let temp_=weather.main.temp-273.15;
 
-    let weathercondition=weather.weather[0].main;
-        if (weathercondition === "Clouds") {
-            newpic = 'images/clouds.png';
-        } else if (weathercondition === "Drizzle") {
-            newpic = 'images/drizzle.png';
-        } else if (weathercondition === "Mist") {
-            newpic = 'images/mist.png';
-        } else if (weathercondition === "Snow") {
-            newpic = 'images/snow.png';
-        }else if (weathercondition === "Rain") {
-            newpic = 'images/rain.png';
-        } else {
-            newpic = 'images/clear.png';
-        }
-        pic.src = newpic;
+        temp.textContent=temp_.toFixed(2)+"°C";
+        humidity.textContent=weather.main.humidity;
+        windspeed.textContent=weather.wind.speed;
+        cityinfo.textContent=weather.name;
+
+        let weathercondition=weather.weather[0].main;
+            if (weathercondition === "Clouds") {
+                newpic = 'images/clouds.png';
+            } else if (weathercondition === "Drizzle") {
+                newpic = 'images/drizzle.png';
+            } else if (weathercondition === "Mist") {
+                newpic = 'images/mist.png';
+            } else if (weathercondition === "Snow") {
+                newpic = 'images/snow.png';
+            }else if (weathercondition === "Rain") {
+                newpic = 'images/rain.png';
+            } else {
+                newpic = 'images/clear.png';
+            }
+            pic.src = newpic;
     }
 document.getElementById('searchpicdiv').addEventListener('click', weather);

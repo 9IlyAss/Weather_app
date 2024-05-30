@@ -1,12 +1,12 @@
 body
 {
-    background-color: #03256C;
+    background: linear-gradient(to bottom, #87CEEB, #FFFFFF);
     
 }
 #container
 {
-    background-color: #2541B2;
-    height: 700px;
+    background: linear-gradient(to bottom right, #b0e0e6, #add8e6);
+        height: 700px;
     width: 400px;
     margin-left: 40%;
     margin-right: 40%;
