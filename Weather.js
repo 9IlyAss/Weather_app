@@ -25,8 +25,8 @@ async function weather()
         let temp_=weather.main.temp-273.15;
 
         temp.textContent=temp_.toFixed(2)+"°C";
-        humidity.textContent=weather.main.humidity;
-        windspeed.textContent=weather.wind.speed;
+        humidity.textContent=weather.main.humidity+"%";
+        windspeed.textContent=weather.wind.speed+" M/S";
         cityinfo.textContent=weather.name;
 
         let weathercondition=weather.weather[0].main;

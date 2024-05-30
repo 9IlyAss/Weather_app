@@ -1,12 +1,11 @@
 body
 {
-    background: linear-gradient(to bottom, #87CEEB, #FFFFFF);
-    
+    background: linear-gradient(to bottom right, #b0e0e6, #add8e6);
 }
 #container
 {
-    background: linear-gradient(to bottom right, #b0e0e6, #add8e6);
-        height: 700px;
+    background : linear-gradient(#f4d06f,#767522);
+    height: 700px;
     width: 400px;
     margin-left: 40%;
     margin-right: 40%;
@@ -76,5 +75,15 @@ input[type=text]
     color: yellow;
     text-decoration: underline;
 }
-
-
+#windspeed
+{
+    font-size: 20px;
+    font-weight: bolder;
+    margin-left: 35px;
+}
+#humidity
+{
+    font-size: 20px;
+    font-weight: bolder;
+    margin-left: 35px;
+}
