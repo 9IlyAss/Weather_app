@@ -10,3 +10,7 @@ Features
 - Temperature Display: Displays the current temperature in Celsius.
 - Humidity and Wind Speed: Provides additional weather details such as humidity percentage and wind speed in meters per second.
 - Visual Indicators: Includes weather status icons to give users a quick visual representation of the current weather conditions.
+
+# Screenshot of the Project 📸
+
+![image](https://github.com/9IlyAss/Weather_app/assets/154934525/135add1f-8121-43a8-b51a-5891f6cb7c7a)
